@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:TelloAltitudeUnlocker"
+             x:Class="TelloAltitudeUnlocker.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Tello Altitude Unlocker" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Label Text = "{Binding ConnectionState}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+            <Label Text="Max Altitude: " />
+            <Label Text="{Binding MaxAltitudeDisplay}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+            <Button FontSize="24" Text="-" Command="{Binding DecreaseMaxAltitude}" IsEnabled="{Binding CanDecreaseMaxAltitude}" />
+            <Button FontSize="24" Text="+" Command="{Binding IncreaseMaxAltitude}" IsEnabled="{Binding CanIncreaseMaxAltitude}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
