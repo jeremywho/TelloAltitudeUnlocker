@@ -12,8 +12,8 @@ namespace TelloAltitudeUnlocker
 {
     public partial class App : Application
     {
-        private readonly bool _consoleLogErrors = true;
-        private readonly bool _consoleLogInfo = true;
+        private readonly bool _consoleLogErrors = false;
+        private readonly bool _consoleLogInfo = false;
         private const string appleKey = "";
         private const string androidKey = "";
 
