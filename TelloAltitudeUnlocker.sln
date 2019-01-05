@@ -13,6 +13,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B27CE2F6-E81A-4DF9-AAEC-DC3D7FB568FB}"
 	ProjectSection(SolutionItems) = preProject
 		appcenter-pre-build.sh = appcenter-pre-build.sh
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global

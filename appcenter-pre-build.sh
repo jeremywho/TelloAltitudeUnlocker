@@ -19,6 +19,8 @@
 #
 # AN IMPORTANT THING: FOR THIS SAMPLE YOU NEED DECLARE API_URL ENVIRONMENT VARIABLE IN APP CENTER BUILD CONFIGURATION.
 
+echo "Running prebuild..."
+
 if [ ! -n "$APP_CENTER_IOS" ]
 then
     echo "You need define the APP_CENTER_IOS variable in App Center"
